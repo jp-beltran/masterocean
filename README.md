@@ -1,6 +1,8 @@
 # 🐚 MasterOcean Angola - Website Institucional
 
 ![MasterOcean Logo](./src/assets/logo.svg)
+![image](https://github.com/user-attachments/assets/4a095a48-e391-4eb5-a9bf-60531c82434f)
+
 
 Website institucional da **MasterOcean Angola**, focado em apresentar as soluções da empresa nos setores de petróleo, gás, engenharia, logística e sustentabilidade.
 
