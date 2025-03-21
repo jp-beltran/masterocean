@@ -1,4 +1,5 @@
 import BackgroundGif from "./components/BackgroundGif";
+import backgroundImg from "./assets/background.jpg";
 import About from "./components/About";
 import Gif1 from "./components/Gif1";
 import Header from "./components/Header";
@@ -9,14 +10,14 @@ import Solutions from "./components/Solutions";
 import Commitment from "./components/Commitment";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { LanguageProvider } from "./context/LanguageContext"; // Importando o provider
+import { LanguageProvider } from "./context/LanguageContext"; 
 
 function App() {
   return (
     <LanguageProvider>
       <div
         className="relative min-h-screen max-w-screen bg-cover z-[0] bg-no-repeat bg-top h-full pt-2"
-        style={{ backgroundImage: "url('/src/assets/background.jpg')" }}
+        style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         {/* GIF no fundo, atrás de todos os outros componentes */}
         <BackgroundGif />

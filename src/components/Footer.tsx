@@ -1,5 +1,6 @@
 import { useLanguage } from "../context/LanguageContext";
 import logo from "../assets/logo2.svg";
+import bg from "../assets/gifs/gif4.gif";
 
 function Footer() {
   const { language } = useLanguage();
@@ -8,7 +9,8 @@ function Footer() {
     <div
       className="relative w-full h-[32rem] bg-no-repeat bg-cover bg-center tracking-tighter"
       id="footer"
-      style={{ backgroundImage: "url('/src/assets/gifs/gif4.gif')" }}
+      style={{ backgroundImage: `url(${bg})` }}
+
     >
       {/* Overlay vermelho que cobre tudo menos a logo */}
       <div className="absolute inset-0 bg-primaryRed opacity-50"></div>

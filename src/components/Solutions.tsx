@@ -1,5 +1,8 @@
 import { useLanguage } from "../context/LanguageContext";
 import Card from "./Card";
+import img1 from "../assets/esqCima.jpg";
+import img2 from "../assets/esqBaixo.jpg";
+import img3 from "../assets/dir.jpg";
 
 function Solutions() {
   const { language } = useLanguage();
@@ -36,7 +39,7 @@ function Solutions() {
           <Card
             width="750px"
             height="400px"
-            backgroundImage="/src/assets/esqCima.jpg"
+            backgroundImage={img1}
             texth1={
               language === "pt"
                 ? "Consultoria Estratégica no Sector de Petróleo e Gás:"
@@ -53,7 +56,7 @@ function Solutions() {
           <Card
             width="750px"
             height="400px"
-            backgroundImage="/src/assets/esqBaixo.jpg"
+            backgroundImage={img2}
             texth1={
               language === "pt"
                 ? "Logística, Procurement e Suporte Operacional"
@@ -72,7 +75,7 @@ function Solutions() {
           <Card
             width="750px"
             height="100%"
-            backgroundImage="/src/assets/dir.jpg"
+            backgroundImage={img3}
             texth1={
               language === "pt"
                 ? "Serviços de Engenharia e Manutenção:"
