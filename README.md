@@ -50,7 +50,7 @@ Este site foi desenvolvido com foco em performance, escalabilidade e suporte mul
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/masterocean.git
+git clone https://github.com/jp-beltran/masterocean.git
 
 # Acesse o diretório
 cd masterocean
