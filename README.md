@@ -1,55 +1,120 @@
-# React + TypeScript + Vite
+# 🐚 MasterOcean Angola - Website Institucional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![MasterOcean Logo](./src/assets/logo.svg)
 
-Currently, two official plugins are available:
+Website institucional da **MasterOcean Angola**, focado em apresentar as soluções da empresa nos setores de petróleo, gás, engenharia, logística e sustentabilidade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Índice
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [🧠 Sobre o projeto](#-sobre-o-projeto)
+- [🚀 Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [⚙️ Instalação](#️-instalação)
+- [🌐 Estrutura de pastas](#-estrutura-de-pastas)
+- [✉️ Envio de mensagens (Email SMTP)](#️-envio-de-mensagens-email-smtp)
+- [📝 Licença](#-licença)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🧠 Sobre o projeto
+
+Este site foi desenvolvido com foco em performance, escalabilidade e suporte multilíngue (**Português/Inglês**). Ele inclui:
+
+- Componentes reutilizáveis com **React + TypeScript**
+- Sistema de **internacionalização manual** via `Context API`
+- Envio de mensagens via **formulário de contato integrado ao EmailJS ou SMTP**
+- Totalmente responsivo e adaptado a ambientes corporativos
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [EmailJS](https://www.emailjs.com/) ou [NodeMailer](https://nodemailer.com/) (opcional via backend)
+- [Vite](https://vitejs.dev/) (build tool)
+- [Context API (React)](https://reactjs.org/docs/context.html)
+
+---
+
+## ⚙️ Instalação
+
+### ✅ Pré-requisitos
+
+- Node.js `>=18.x`
+- NPM ou Yarn
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/masterocean-site.git
+
+# Acesse o diretório
+cd masterocean-site
+
+# Instale as dependências
+npm install
+# ou
+yarn
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse: [http://localhost:5173](http://localhost:5173)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 🌐 Estrutura de pastas
+
 ```
-# masterocean
+src/
+├── assets/              # Imagens e Gifs
+├── components/          # Componentes React (Header, Hero, Footer etc.)
+├── context/             # LanguageContext.tsx (PT/EN)
+├── App.tsx              # Composição principal dos componentes
+├── main.tsx             # Entrada principal da aplicação
+```
+
+---
+
+## ✉️ Envio de mensagens (Email SMTP)
+
+### ✔️ Opção 1 – EmailJS (frontend)
+
+Configure suas chaves e templates diretamente no formulário de contato (`Contact.tsx`):
+
+```tsx
+emailjs.send("service_xxx", "template_xxx", data, "publicKey_xxx");
+```
+
+### ✔️ Opção 2 – SMTP (recomendado)
+
+Crie um backend com `Node.js + Nodemailer` e conecte o formulário ao seu endpoint `/send`. Veja mais no arquivo `smtp-server.ts` (exemplo incluído).
+
+---
+
+## 🌍 Suporte Multilíngue
+
+O botão `PT/EN` no `Header` alterna entre os idiomas dinamicamente, afetando todos os componentes da página.
+
+Exemplo:
+
+```tsx
+const { language, toggleLanguage } = useLanguage();
+
+return (
+  <button onClick={toggleLanguage}>
+    {language === "pt" ? "EN" : "PT"}
+  </button>
+);
+```
+
+---
+
+## 📝 Licença
+
+Este projeto é **privado** e de uso exclusivo da empresa **MasterOcean Angola**. Todos os direitos reservados.
