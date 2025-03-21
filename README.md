@@ -50,10 +50,10 @@ Este site foi desenvolvido com foco em performance, escalabilidade e suporte mul
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/masterocean-site.git
+git clone https://github.com/seu-usuario/masterocean.git
 
 # Acesse o diretório
-cd masterocean-site
+cd masterocean
 
 # Instale as dependências
 npm install
