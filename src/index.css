@@ -1,0 +1,35 @@
+@font-face {
+  font-family: AlvarLight;
+  src: url(./assets/fonts/Alvar-Pro-Light.otf);
+}
+@font-face {
+  font-family: AlvarRegular;
+  src: url(./assets/fonts/Alvar-Pro-Regular.otf);
+}
+
+@font-face {
+  font-family: AlvarSemi;
+  src: url(./assets/fonts/Alvar-Pro-SemiBold.otf);
+}
+
+@font-face {
+  font-family: AlvarBold;
+  src: url(./assets/fonts/Alvar-Pro-Bold.otf);
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-alvar-regular: AlvarRegular, "sans-serif";
+  --font-alvar-semi: AlvarSemi, "sans-serif";
+  --font-alvar-bold: AlvarBold, "sans-serif";
+  --font-alvar-light: AlvarLight, "sans-serif";
+  --color-primaryYellow: #ffcc04;
+  --color-primaryRed: #cd2031;
+  --color-secundaryRed: #720e1e;
+
+  --color-gray-200: #f0f0f0;
+}
+html {
+  scroll-behavior: smooth;
+}
