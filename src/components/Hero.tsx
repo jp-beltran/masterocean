@@ -10,7 +10,7 @@ function Hero() {
     >
       {/* Título */}
       <div className="w-full lg:w-[30rem]">
-        <h1 className="uppercase text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-alvar-bold tracking-tighter leading-tight">
+        <h1 className="uppercase text-5xl sm:text-5xl md:text-5xl lg:text-7xl font-alvar-bold tracking-tight leading-[0.9em]">
           {language === "pt"
             ? "MOVIMENTANDO SOLUÇÕES EFICAZES"
             : "MOVING EFFECTIVE SOLUTIONS"}
@@ -22,16 +22,8 @@ function Hero() {
         <div className="mb-6 text-2xl sm:text-lg md:text-xl lg:text-2xl font-alvar-regular">
           <p className="font-alvar-light">
             {language === "pt"
-              ? "Seu parceiro estratégico para soluções"
-              : "Your strategic partner for solutions"}
-          </p>
-          <p className="font-alvar-light">
-            {language === "pt"
-              ? "inovadoras nos setores de petróleo, gás"
-              : "innovative in the oil, gas"}
-          </p>
-          <p className="font-alvar-light">
-            {language === "pt" ? "e outros mercados." : "and other markets."}
+              ? "Seu parceiro estratégico para soluções inovadoras nos setores de petróleo, gás e outros mercados."
+              : "Your strategic partner for solutions innovative in the oil, gas and other markets."}
           </p>
         </div>
         <a href="#contact">

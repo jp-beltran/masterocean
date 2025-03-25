@@ -19,7 +19,9 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className="relative bg-cover bg-no-repeat bg-top pl-10 rounded-2xl overflow-hidden w-full sm:w-auto h-auto"
+      className={`relative bg-cover bg-no-repeat bg-top rounded-2xl overflow-hidden w-full sm:w-auto h-auto ${
+        className ?? ""
+      }`}
       style={{
         width: typeof width === "number" ? `${width}px` : width,
         height: typeof height === "number" ? `${height}px` : height,
@@ -29,14 +31,14 @@ const Card: React.FC<CardProps> = ({
       }}
     >
       {/* Overlay escuro */}
-      <div className="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
+      <div className="absolute inset-0 bg-black opacity-70 rounded-2xl"></div>
 
       {/* Conteúdo do card */}
-      <div className={`relative z-10 pt-20 ${className ?? ""}`}>
+      <div className="relative z-10 md:p-14 p-10">
         <h1 className="text-white font-alvar-bold lg:text-3xl uppercase text-3xl">
           {texth1}
         </h1>
-        <p className="text-white font-alvar-light lg:text-2xl mt-5 whitespace-pre-line">
+        <p className="text-white font-alvar-light lg:text-2xl mt-5 whitespace-pre-line ">
           {textp}
         </p>
       </div>

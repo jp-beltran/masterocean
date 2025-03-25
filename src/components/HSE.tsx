@@ -4,12 +4,12 @@ function HSE() {
   const { language } = useLanguage();
   return (
     <div
-      className="px-4 md:px-20 max-w-screen h-auto md:h-[90vh] flex items-center justify-center py-10"
+      className=" md:px-20 max-w-screen h-auto md:h-[90vh] flex items-center justify-center py-10"
       id="growth"
     >
       <div className="w-full h-auto md:h-[500px] flex flex-col md:flex-row justify-evenly bg-secundaryRed px-6 md:px-50 py-10 md:py-0 rounded-3xl">
         <div className="w-full md:w-1/2 mb-10 md:my-28">
-          <h1 className="uppercase text-xl font-alvar-bold mb-4 text-white">
+          <h1 className="uppercase text-base font-alvar-bold mb-4 text-white">
             {language === "pt"
               ? "QUEM SOMOS - MASTER OCEAN ANGOLA"
               : "ABOUT US - MASTER OCEAN ANGOLA"}

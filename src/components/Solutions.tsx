@@ -54,6 +54,7 @@ function Solutions() {
               width="750px"
               height="400px"
               backgroundImage={esqCima}
+              className="shadow-md"
               texth1={
                 language === "pt"
                   ? "Consultoria Estratégica no Sector de Petróleo e Gás:"
@@ -76,8 +77,8 @@ function Solutions() {
           <div className="w-full lg:w-auto flex justify-center items-center z-0">
             <Card
               width="750px"
-              height="400px"
               backgroundImage={esqBaixo}
+              className=""
               texth1={
                 language === "pt"
                   ? "Logística, Procurement e Suporte Operacional"
@@ -102,11 +103,12 @@ function Solutions() {
           </div>
         </div>
 
-        <div className="w-full lg:w-auto flex justify-center items-center">
+        <div className="w-full lg:w-auto flex  lg:h-[840px] h-auto">
           <Card
             width="750px"
-            height="840px"
+            height="100%"
             backgroundImage={dir}
+            className=""
             texth1={
               language === "pt"
                 ? "Serviços de Engenharia e Manutenção:"

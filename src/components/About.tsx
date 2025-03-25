@@ -19,9 +19,11 @@ function About() {
           </h1>
           <h1 className="uppercase text-5xl md:text-6xl font-alvar-bold tracking-tighter">
             {language === "pt"
-              ? "Desde a sua fundação, a"
+              ? "Desde a sua fundação, a "
               : "Since its foundation, "}
-            <span className="text-red-900">MasterOcean</span>{" "}
+            <span className="text-red-900">
+              MasterOcean <br />{" "}
+            </span>
             {language === "pt"
               ? "tem-se destacado como pioneira em"
               : "has stood out as a pioneer in"}{" "}
