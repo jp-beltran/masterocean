@@ -6,7 +6,7 @@ interface CardProps {
   backgroundImage?: string;
   texth1: string;
   textp: string;
-  paddingTop?: string | number; // <- Adicionada prop para padding-top
+  className?: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -15,15 +15,14 @@ const Card: React.FC<CardProps> = ({
   backgroundImage,
   texth1,
   textp,
-  paddingTop,
+  className,
 }) => {
   return (
     <div
-      className="relative bg-cover bg-no-repeat bg-top pl-10 rounded-2xl overflow-hidden"
+      className="relative bg-cover bg-no-repeat bg-top pl-10 rounded-2xl overflow-hidden w-full sm:w-auto h-auto"
       style={{
-        width,
-        height,
-        paddingTop,
+        width: typeof width === "number" ? `${width}px` : width,
+        height: typeof height === "number" ? `${height}px` : height,
         backgroundImage: backgroundImage
           ? `url(${backgroundImage})`
           : undefined,
@@ -33,7 +32,7 @@ const Card: React.FC<CardProps> = ({
       <div className="absolute inset-0 bg-black opacity-50 rounded-2xl"></div>
 
       {/* Conteúdo do card */}
-      <div className="relative z-10">
+      <div className={`relative z-10 pt-20 ${className ?? ""}`}>
         <h1 className="text-white font-alvar-bold text-2xl uppercase">
           {texth1}
         </h1>

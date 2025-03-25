@@ -18,29 +18,31 @@ function Contact() {
 
   return (
     <div
-      className="flex flex-row items-center justify-between px-60 h-[60rem]"
+      className="flex items-center justify-center mx-20  py-20 flex-col lg:flex-row"
       id="contact"
     >
-      <div className="border-l-4 pl-10 border-secundaryRed">
-        <h1 className="font-alvar-bold text-2xl">
+      {/* Texto de introdução */}
+      <div className="w-full md:w-1/2 font-alvar-bold border-l-4 border-secundaryRed pl-6 mb-20">
+        <h1 className="text-base mb-4 uppercase">
           {language === "pt" ? "CONTATO" : "CONTACT"}{" "}
           <span className="text-secundaryRed">- MASTER OCEAN ANGOLA</span>
         </h1>
-        <h1 className="text-6xl font-alvar-bold tracking-tighter uppercase">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl tracking-tight uppercase whitespace-pre-line">
           {language === "pt"
             ? "Começar hoje a \n tratar de soluções \n eficientes"
             : "Start today \n solving efficient \n solutions"}
         </h1>
-        <p className="font-alvar-light text-2xl max-w-[450px] mt-10">
+        <p className="font-alvar-light text-base sm:text-lg md:text-2xl mt-6 max-w-[480px]">
           {language === "pt"
             ? "Sua mensagem é importante para nós. Entre em contato e juntos, daremos início à transformação da sua empresa."
             : "Your message is important to us. Get in touch and together we will start transforming your company."}
         </p>
       </div>
 
-      <div className="w-1/2">
+      {/* Formulário */}
+      <div className="w-full md:w-1/2 ">
         <form
-          className="flex flex-col gap-4"
+          className="flex flex-col gap-4 "
           action="https://submit-form.com/2JnAVptIM"
           method="POST"
         >
@@ -77,7 +79,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="bg-secundaryRed cursor-pointer rounded-4xl self-end px-4 py-1 font-alvar-bold text-lg text-white transition-transform duration-300 hover:scale-105 "
+            className="bg-secundaryRed cursor-pointer rounded-4xl self-end px-6 py-2 font-alvar-bold text-lg text-white transition-transform duration-300 hover:scale-105"
           >
             {language === "pt" ? "ENVIAR" : "SEND"}
           </button>

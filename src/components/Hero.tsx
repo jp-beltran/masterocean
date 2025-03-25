@@ -5,18 +5,21 @@ function Hero() {
 
   return (
     <div
-      className="flex flex-row mx-46 mt-30 justify-evenly gap-30 z-1"
+      className="flex flex-col lg:flex-row mx-4 sm:mx-8 md:mx-16 lg:mx-44 mt-10 lg:mt-30 justify-between gap-10 lg:gap-28 z-10"
       id="hero"
     >
-      <div className="w-[30rem]">
-        <h1 className="uppercase text-7xl font-alvar-bold tracking-tighter">
+      {/* Título */}
+      <div className="w-full lg:w-[30rem]">
+        <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-alvar-bold tracking-tighter leading-tight">
           {language === "pt"
             ? "MOVIMENTANDO SOLUÇÕES EFICAZES"
             : "MOVING EFFECTIVE SOLUTIONS"}
         </h1>
       </div>
-      <div className="w-[30rem]">
-        <p className="mb-4 text-2xl font-alvar-regular font-thin">
+
+      {/* Parágrafo + Botão */}
+      <div className="w-full lg:w-[30rem]">
+        <div className="mb-6 text-base sm:text-lg md:text-xl lg:text-2xl font-alvar-regular">
           <p className="font-alvar-light">
             {language === "pt"
               ? "Seu parceiro estratégico para soluções"
@@ -30,9 +33,9 @@ function Hero() {
           <p className="font-alvar-light">
             {language === "pt" ? "e outros mercados." : "and other markets."}
           </p>
-        </p>
+        </div>
         <a href="#contact">
-          <button className="text-white font-alvar-bold px-5 h-12 uppercase bg-primaryRed cursor-pointer rounded-[3.5rem] text-xl">
+          <button className="text-white font-alvar-bold px-6 h-12 uppercase bg-primaryRed cursor-pointer rounded-[3.5rem] text-base sm:text-lg md:text-xl">
             {language === "pt" ? "Entrar em contato" : "Contact us"}
           </button>
         </a>

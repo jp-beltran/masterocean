@@ -15,7 +15,7 @@ function App() {
   return (
     <LanguageProvider>
       <div
-        className="relative min-h-screen max-w-screen bg-cover z-[0] bg-no-repeat bg-top h-full pt-2"
+        className="relative min-h-screen  bg-cover z-[0] bg-no-repeat bg-top h-full pt-2"
         style={{ backgroundImage: "url('/src/assets/background.jpg')" }}
       >
         {/* GIF no fundo, atrás de todos os outros componentes */}
@@ -26,9 +26,9 @@ function App() {
         <Hero />
         <Gif1 />
         <About />
-        <div className=" w-[795px] border-t-5 border-black "></div>
+        <div className=" w-1/2 border-t-5 border-black absolute left-0 md:"></div>
         <Philosophy />
-        <div className=" w-[900px] border-t-5 border-black absolute right-0"></div>
+        <div className=" w-[50%] border-t-5 border-black absolute right-0"></div>
         <Growth />
         <Solutions />
         <Commitment />
