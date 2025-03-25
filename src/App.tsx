@@ -9,14 +9,15 @@ import Solutions from "./components/Solutions";
 import Commitment from "./components/Commitment";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { LanguageProvider } from "./context/LanguageContext"; // Importando o provider
+import { LanguageProvider } from "./context/LanguageContext"; // Importando o provider f
+import backgroundIMG from "./assets/background.jpg";
 
 function App() {
   return (
     <LanguageProvider>
       <div
         className="relative min-h-screen  bg-cover z-[0] bg-no-repeat bg-top h-full pt-2"
-        style={{ backgroundImage: "url('/src/assets/background.jpg')" }}
+        style={{ backgroundImage: `url(${backgroundIMG})` }}
       >
         {/* GIF no fundo, atrás de todos os outros componentes */}
         <BackgroundGif />

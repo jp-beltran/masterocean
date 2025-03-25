@@ -33,20 +33,20 @@ function About() {
           </h1>
         </div>
 
-        <div className="w-full md:w-[40rem] flex flex-col gap-6 justify-center px-2 md:px-0">
-          <h1 className="text-base md:text-2xl font-alvar-light">
+        <div className="w-full md:w-[40rem] flex flex-col gap-6 justify-center px-2 md:px-0 text-2xl">
+          <h1 className=" md:text-2xl font-alvar-light">
             {language === "pt"
               ? "Identificando proativamente oportunidades no mercado global. Inicialmente especializada em consultoria estratégica, a empresa ganhou reputação pela capacidade de propor soluções criativas e eficazes, atendendo às exigências dinâmicas do setor."
               : "Proactively identifying opportunities in the global market. Initially specializing in strategic consulting, the company gained a reputation for its ability to propose creative and effective solutions, meeting the dynamic demands of the sector."}
           </h1>
 
-          <h1 className="text-base md:text-2xl font-alvar-light">
+          <h1 className=" md:text-2xl font-alvar-light">
             {language === "pt"
               ? "Com o aumento da procura por serviços especializados, a MASTEROCEAN expandiu as suas operações, oferecendo um portfólio completo de soluções integradas, incluindo consultoria estratégica, suporte técnico, procurement e logística."
               : "With the increasing demand for specialized services, MASTEROCEAN has expanded its operations, offering a comprehensive portfolio of integrated solutions, including strategic consulting, technical support, procurement, and logistics."}
           </h1>
 
-          <h1 className="text-base md:text-2xl font-alvar-light">
+          <h1 className=" md:text-2xl font-alvar-light">
             {language === "pt"
               ? "Este crescimento reflete o nosso compromisso com a entrega de serviços de alta qualidade que resolvem problemas e promovem o desenvolvimento sustentável para os nossos parceiros de negócios."
               : "This growth reflects our commitment to delivering high-quality services that solve problems and promote sustainable development for our business partners."}

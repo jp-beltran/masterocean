@@ -22,7 +22,7 @@ function Philosophy() {
           {language === "pt" ? "NOSSA FILOSOFIA" : "OUR PHILOSOPHY"}
         </h1>
 
-        <p className="text-base md:text-2xl pt-4 md:pt-6">
+        <p className="text-2xl md:text-2xl pt-4 md:pt-6">
           {language === "pt"
             ? "Acreditamos no poder da diversidade e colaboração no impacto positivo que as nossas soluções podem gerar no desenvolvimento local e global. O nosso objectivo é impulsionar a transformação e inovação, promovendo um futuro sustentável para os nossos clientes e comunidades."
             : "We believe in the power of diversity and collaboration and in the positive impact our solutions can have on local and global development. Our goal is to drive transformation and innovation, promoting a sustainable future for our clients and communities."}

@@ -23,12 +23,12 @@ function Commitment() {
 
         {/* Texto no fundo amarelo */}
         <div className="bg-primaryYellow py-20  md:rounded-t-[3rem] relative z-10">
-          <div className="md:text-center mx-20 p-10 font-alvar-bold border-l-4 border-secundaryRed">
+          <div className="md:text-center mx-10 p-10 font-alvar-bold border-l-4 border-secundaryRed">
             <h1 className="text-base mb-4 uppercase">
               {language === "pt" ? "SUSTENTABILIDADE -" : "SUSTAINABILITY -"}{" "}
               <span className="text-secundaryRed">MASTER OCEAN ANGOLA</span>
             </h1>
-            <h1 className="text-3xl font-alvar-bold tracking-tight leading-tight mb-6 whitespace-pre-line">
+            <h1 className="text-4xl font-alvar-bold tracking-tight leading-tight mb-6 whitespace-pre-line">
               {language === "pt"
                 ? "NOSSO \n COMPROMISSO \n COM O FUTURO:"
                 : "OUR \n COMMITMENT \n TO THE FUTURE:"}

@@ -33,10 +33,10 @@ const Card: React.FC<CardProps> = ({
 
       {/* Conteúdo do card */}
       <div className={`relative z-10 pt-20 ${className ?? ""}`}>
-        <h1 className="text-white font-alvar-bold text-2xl uppercase">
+        <h1 className="text-white font-alvar-bold lg:text-3xl uppercase text-3xl">
           {texth1}
         </h1>
-        <p className="text-white font-alvar-light text-2xl mt-5 whitespace-pre-line">
+        <p className="text-white font-alvar-light lg:text-2xl mt-5 whitespace-pre-line">
           {textp}
         </p>
       </div>

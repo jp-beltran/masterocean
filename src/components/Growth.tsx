@@ -15,14 +15,14 @@ function Growth() {
               ? "QUEM SOMOS - MASTER OCEAN ANGOLA"
               : "ABOUT US - MASTER OCEAN ANGOLA"}
           </h1>
-          <h1 className="font-alvar-bold text-3xl md:text-6xl uppercase text-white tracking-tighter border-b-4 md:border-b-10 pb-4 md:pb-8 border-black w-full md:w-3/4">
+          <h1 className="font-alvar-bold text-5xl md:text-6xl uppercase text-white tracking-tighter border-b-4 md:border-b-10 pb-4 md:pb-8 border-black w-full md:w-3/4">
             {language === "pt"
               ? "Diversificação e crescimento:"
               : "Diversification and growth:"}
           </h1>
         </div>
 
-        <div className="w-full md:w-[40rem] flex flex-col items-start justify-center gap-4 text-base md:text-xl font-alvar-light text-white">
+        <div className="w-full md:w-[40rem] flex flex-col items-start justify-center gap-4 text-xl md:text-xl font-alvar-light text-white">
           <p>
             {language === "pt"
               ? "Com um foco contínuo em crescimento sustentável, a MASTEROCEAN evoluiu para atender a novos mercados, expandindo-se para além do sector de petróleo e gás."
