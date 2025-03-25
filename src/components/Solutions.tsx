@@ -71,7 +71,6 @@ function Solutions() {
                 Serviços de inspecção com Drones
                 Serviços de Gestão de construção 
                 Serviços de proteção catódica"
-            paddingTop="490px"
           />
         </div>
       </div>
