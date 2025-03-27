@@ -106,4 +106,4 @@ Este projeto é **privado** e de uso exclusivo da empresa contratante. Todos os 
 
 **João Pedro — Desenvolvedor Front-End**
 
-[LinkedIn](https://www.linkedin.com) • [GitHub](https://github.com/jp-beltran) • [Portfólio](https://portifolio-jp-beltran.vercel.app)
+[LinkedIn](www.linkedin.com/in/joão-pedro-beltran) • [GitHub](https://github.com/jp-beltran) • [Portfólio](https://portifolio-jp-beltran.vercel.app)
