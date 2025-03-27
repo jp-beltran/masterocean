@@ -3,7 +3,7 @@
 ![image](https://github.com/user-attachments/assets/aad7afd3-ba3b-4101-a074-6593875fe3e3)
 ![image](https://github.com/user-attachments/assets/8ed0429e-ea63-4925-a890-c52a76acaa9b)
 ![image](https://github.com/user-attachments/assets/6a8b224e-9ff1-4d68-821d-b10eec777654)
-Link do projeto: https://masterocean.vercel.app
+[Clique aqui para acessar]https://masterocean.vercel.app
 
 
 
@@ -104,6 +104,6 @@ Este projeto é **privado** e de uso exclusivo da empresa contratante. Todos os 
 
 ## 🤝 Autor
 
-**Sena — Desenvolvedor Front-End**
+**João Pedro — Desenvolvedor Front-End**
 
-[LinkedIn](https://www.linkedin.com) • [GitHub](https://github.com/seu-usuario) • [Portfólio](https://seuportfolio.com)
+[LinkedIn](https://www.linkedin.com) • [GitHub](https://github.com/jp-beltran) • [Portfólio](https://portifolio-jp-beltran.vercel.app)
